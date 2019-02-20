@@ -73,9 +73,9 @@ class Book():
 		else:
 			print('"Invalid rating: {rating}"'.format(rating=rating))
 	
-	# Two Books are equal if their name and isbn are the same
+	# Two Books are equal if their title and isbn are the same
 	def __eq__(self, other_book):
-		if self.name == other_book.name and self.isbn == other_book.isbn:
+		if self.title == other_book.title and self.isbn == other_book.isbn:
 			return True
 		else:
 			return False
